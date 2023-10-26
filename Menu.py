@@ -34,7 +34,7 @@ def deletar():
     cursor.execute('SELECT ID FROM Aluno WHERE ID = %s', (id))
     resultado = cursor.fetchone()
     if resultado is not None:
-        cursor.execute('DELETE FROM Aluno WHERE ID = %S', (id))
+        cursor.execute('DELETE FROM Aluno WHERE ID = %s', (id))
     else:
         print("ID não encontrado :/")
 
